@@ -1,0 +1,24 @@
+
+We are building a complete e-commerce website for our computer selling company, NovaNexus Tecknologies. Currently we have set up landing page, the store page (this is a dynamic page. The content in this page will be dynamically changed depending on the parameters values passed to this page's php.), and contact Us page. We have figured out all the functionalities and services we plan to implement to the website. I will give a brief overview to you about the functionalities/services we plan to provide.
+1. When a customer come to the landing page of our website, under the carousal, they get to see the list of categories, each in a box in a grid. Curently, there is 10 categories in this section. These list of catgories are retrived from the database, and will dynamically change the amount of boxes (eg: if i add a new category record to the current datalist, the page will show 11 category boxes). Customer can click on each category item and go straight to the store page with the filters set to that clicked category.
+2. The landing page also has a section to show featured products, which shows the current promotional products in our store. Clicking on an item will redirect customer to its details page. 
+3. When the customer go strait to the store page, it will display the latest products in the the store. The store page has a side pannel, which is designed to give options to the customer to filter the products in the store page. This side panel can filter products based on price, brand, model, capacity (if applicable), product stock status(in stock, on sale, etc.), and some other features such as rgb supported,etc. All the values for the filter categories are retrived from the database too.
+4. Customers can click on the search icon in the navigation bar and serach product using the product name, category, brand, features, capacity, etc. The results will be shown in the store page, but now the products that matches with the search input. 
+5. The website has cart and wishlist fucntionalities. THis lets the customers put products in the wishlist, or put items on the cart and purchase them. Customers can have their own cart and wishlist.
+5. Customers can login and register to the website, by clicking on the LOGIN/REGISTER link on the navigation bar. This will allow the customer to have their own cart and wishlist. These data will be saved on and retrived from the database. The proper relations has to assigned to the tables.
+6. Like every e-commerce site, the customers can buy continue to purchase the items on the cart and we will handle the payement function through a 3rd party payment gateway.
+
+I want your help to build the complete database to this e-commerce site. We curently decided to create the tabels mentioned below. The primary keys and foreign keys mentioned with the table names are not final. They are just ther for us and you to have a very basic idea about the relations between each tables.
+Table names:
+Product (product_id, other product details)
+Category (category_id, category_name, etc)
+Stock (stock_record_id, product_id, etc)
+Customer (customer_id, customer name, etc)
+Cart(cart_id, cust_id) --> cart_item(cart_item_id, product_id, cart_id) (In here, we used cart_item table to include all the cart item regardless of the customer. But we can include the cart id for the particular customer, and use that to get the particular customer's cart details.)
+Wishlist (wishlist_id, product_id, cust_id) (I am not sure about this table structure. I might be wrong but it seems to cause problems when connt)
+order (order_id, etc) (this table will store all the order details for all the customers. One row per each customer. We planned to put the product items for that particular order in a single column as a prepared string.)
+Review (columns to store reviews made by each user)
+
+The above tables are just our first-thought ideas. We tried to plan the databse, tables and their columns, and its relations. But we keep entangling our minds when keep thinking about the databse. I need your expert guidance to create this database, which we are goin to use to dynamically populate the website, authentication, and for the admin panel too (admin panel is for inserting new products, managing all the customer details, managing and keeping track of the stocks in our shop, view all orders, etc). We are using phpmyadmin for now to use in our website. We want your guidance, expertiese, and help to create this database completely. 
+
+We may have definitle made some error mistakes. And we may have followed some non-convensional methods, which may have made our work harder. If so, suggest the best ways, the standard ways the the industry do things, and guide us. You can modify, or create a new, industry standard database structure for our site if needed. Thank you in advance.

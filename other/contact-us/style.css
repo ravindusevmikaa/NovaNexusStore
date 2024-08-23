@@ -1,0 +1,293 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero section styles */
+.hero {
+    background-color: #43506C;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.heading h1 {
+    font-size: 55px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.nav {
+    text-align: right;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* About Us specific styles */
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Vision and Mission styles */
+.vision-mission {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.vision, .mission {
+    background-color: #f7f7f7;
+    border-radius: 50% 50% 0 0 / 100px 100px 0 0;
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+.vision h2, .mission h2 {
+    font-size: 28px;
+    color: #EF4B4C;
+    margin-bottom: 20px;
+}
+
+.vision p, .mission p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Team section styles */
+.team {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 28px;
+    color: #EF4B4C;
+    margin-bottom: 40px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Contact Us section styles */
+.contact-section {
+    background-color: #43506C;
+    padding: 60px 0;
+    color: #E9E9EB;
+}
+
+.contact-section .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-section .section-header h2 {
+    color: #EF4B4C;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.contact-section .section-header p {
+    color: #E9E9EB;
+}
+
+.contact-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-info {
+    width: 45%;
+}
+
+.contact-info-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.contact-info-icon {
+    height: 70px;
+    width: 70px;
+    background-color: #E9E9EB;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.contact-info-icon i {
+    font-size: 30px;
+    line-height: 70px;
+}
+
+.contact-info-content {
+    margin-left: 20px;
+}
+
+.contact-info-content h4 {
+    color: #3D619B;
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+.contact-info-content p {
+    color: #E9E9EB;
+    font-size: 1em;
+}
+
+.contact-form {
+    background-color: #43506C;
+    padding: 40px;
+    width: 45%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.contact-form h2 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #E9E9EB;
+}
+
+.contact-form .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact-form .input-box input, .contact-form .input-box textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #EF4B4C;
+    outline: none;
+    resize: none;
+    color: #E9E9EB;
+    background: none;
+}
+
+.contact-form .input-box span {
+    position: relative;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #3D619B;
+}
+
+.contact-form .input-box input:focus ~ span, .contact-form .input-box textarea:focus ~ span {
+    color: #E9E9EB;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contact-form .input-box input[type="submit"] {
+    width: 100%;
+    background: #EF4B4C;
+    color: #E9E9EB;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #3D619B;
+    transition: 0.5s;
+}
+
+.contact-form .input-box input[type="submit"]:hover {
+    background: #3D619B;
+    color: #E9E9EB;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .nav ul li {
+        margin-left: 10px;
+    }
+
+    .hero-content h2 {
+        font-size: 30px;
+    }
+
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-section .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+

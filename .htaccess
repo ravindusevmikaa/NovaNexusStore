@@ -1,0 +1,7 @@
+# Turning on
+RewriteEngine ON
+
+#Handle Requests
+RewriteRule ^details?$ details.php [NC]
+RewriteRule ^/compStore?$ index.php [NC]
+

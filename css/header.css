@@ -1,0 +1,209 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #E9E9EB;
+  background-color: #0F141C;
+}
+
+.header {
+  position: sticky;
+  z-index: 200;
+  top: 0;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+  padding: 0 calc((100% - 1300px) / 2);
+  background-color: rgba(23, 25, 28, 0.4588235294);
+  backdrop-filter: blur(10px) brightness(0.5);
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header-logo-img {
+  height: 80%;
+}
+.header-nav {
+  font-size: 14px;
+  margin-left: auto;
+}
+.header-nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  transition: 0.2s;
+  gap: 20px;
+}
+.header-nav ul li a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #E9E9EB;
+}
+.header-nav ul li:hover, .header-nav ul a:hover {
+  color: #C2C2C2;
+  scale: 1.01;
+}
+.header-search {
+  display: flex;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 40%;
+  height: 100%;
+  margin-right: -80px;
+  margin-left: auto;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.11);
+  border-left: solid 1px rgba(255, 255, 255, 0.11);
+}
+.header-search-textbox {
+  font-size: medium;
+  box-sizing: border-box;
+  width: 75%;
+  height: inherit;
+  padding: 0 0 0 40px;
+  transition: 0.2s;
+  color: #E9E9EB;
+  border: unset;
+  background-color: rgba(23, 25, 28, 0.4588235294);
+}
+.header-search-textbox:hover {
+  transition: 0.2s;
+  background-color: rgba(23, 25, 28, 0.65);
+}
+.header-search-button {
+  width: 25%;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #E9E9EB;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: solid 1px rgba(255, 255, 255, 0.11);
+  background-color: rgba(23, 25, 28, 0.4588235294);
+}
+.header-search-button .search-icon {
+  font-size: x-large;
+  margin-left: -40px;
+}
+.header-search-button:hover {
+  transition: 0.2s;
+  color: #C2C2C2;
+  background-color: rgba(23, 25, 28, 0.65);
+}
+.header .user-section {
+  position: relative;
+  display: inherit;
+  width: max-content;
+  height: 100%;
+  margin-left: auto;
+}
+.header .user-section-background {
+  position: absolute;
+  z-index: 201;
+  top: 0;
+  right: calc(-infinity * 1px);
+  bottom: 0;
+  left: 0;
+  transform: skew(-25deg);
+  border-left: solid 1px rgba(255, 255, 255, 0.11);
+  background: #202020;
+}
+.header .user-section-content {
+  position: relative;
+  z-index: 202;
+  display: flex;
+  align-content: center;
+  flex-direction: row-reverse;
+  margin: 0 auto 0 20px;
+  gap: 10px;
+}
+.header .user-section-item {
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+  transition: 0.1s;
+  text-decoration: none;
+  color: #E9E9EB;
+  gap: 8px;
+}
+.header .user-section-item img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+  text-wrap: nowrap;
+}
+.header .user-section-item .tool-icon {
+  font-size: 20px;
+  margin-bottom: -15px;
+  transition: 0.1s;
+}
+.header .user-section-item .badge {
+  font-size: 10px;
+  position: relative;
+  top: -27px;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  color: white;
+  border-radius: 50%;
+  background-color: red;
+}
+.header .user-section-item.cart-widget {
+  align-items: center;
+  flex-direction: row;
+}
+.header .user-section-item.cart-widget img {
+  margin-right: 5px;
+  margin-bottom: 0;
+}
+.header .user-section-item.cart-widget .cart-info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.header .user-section-item.cart-widget .cart-info .cart-subtotal {
+  transition: 0.2s;
+  color: #E9E9EB;
+}
+.header .user-section-item.cart-widget .cart-info .cart-subtotal .currency-symbol {
+  font-family: "Nirmala UI", "Iskoola Pota", sans-serif, serif;
+  font-weight: bold;
+  margin-right: 2px;
+}
+.header .user-section-item:hover {
+  transition: 0.2s;
+  color: #C2C2C2;
+  scale: 1.01;
+}
+.header .user-section-item:hover .tool-icon {
+  transition: 0.2s;
+  color: #E9E9EB;
+  scale: 1.05;
+}
+.header .user-section-item:hover .cart-subtotal {
+  transition: 0.2s;
+  scale: 1.02;
+}
+
+body .body_div {
+  padding: 0 calc((100% - 1300px) / 2);
+}
+
+/*# sourceMappingURL=header.css.map */

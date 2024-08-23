@@ -1,0 +1,213 @@
+.section-wrapper {
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  padding: 50px calc((100% - 1300px) / 2) !important;
+  color: #E9E9EB;
+}
+.section-product-details {
+  display: flex;
+  align-items: flex-start;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 8px;
+}
+.section-details {
+  padding: 20px;
+}
+.section-details-left {
+  display: flex;
+  align-items: center;
+  flex: 0 0 50%;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.section-details-right {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  flex: 0 0 50%;
+}
+
+.product-breadcrumb {
+  font-size: small;
+  margin-bottom: 10px;
+}
+.product-breadcrumb a {
+  transition: 0.25s ease;
+  text-decoration: none;
+  color: rgba(233, 233, 235, 0.7);
+}
+.product-breadcrumb a:hover {
+  color: #E9E9EB;
+}
+.product-details-title {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+.product-details-title h1 {
+  margin: 0;
+}
+.product-details-brand {
+  max-width: 70px;
+  max-height: 70px;
+}
+.product-details-brand img {
+  max-height: inherit;
+  object-fit: cover;
+}
+.product-details-price {
+  font-family: "Nirmala UI", "Iskoola Pota", sans-serif, serif;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+.product-details-price .item-amount {
+  font-size: larger;
+  margin-top: 2px;
+  text-decoration: line-through;
+  color: #999999;
+}
+.product-details-price .item-current-amount {
+  font-size: x-large;
+  font-weight: bold;
+  color: rgba(107, 158, 255, 0.6901960784);
+}
+.product-details-features {
+  font-size: smaller;
+  margin-bottom: 20px;
+}
+.product-details-features ul {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-left: 20px;
+  gap: 10px;
+}
+.product-details-warranty {
+  margin-bottom: 20px;
+}
+.product-details-warranty img {
+  max-height: 120px;
+}
+.product-details-actions {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 45px;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+.product-details-actions .quantity-control {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  height: 45px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: #202020;
+}
+.product-details-actions .quantity-control button {
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 7px 10px;
+  cursor: pointer;
+  color: #E9E9EB;
+  border: unset;
+  background-color: #202020;
+}
+.product-details-actions .quantity-control input {
+  width: 30px;
+  height: inherit;
+  padding: 0;
+  text-align: center;
+  color: #E9E9EB;
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  background-color: #202020;
+}
+.product-details-actions .quantity-control input::-webkit-outer-spin-button, .product-details-actions .quantity-control input::-webkit-inner-spin-button {
+  display: none; /*<- Crashes Chrome on hover */
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.product-details-actions .quantity-control input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
+}
+.product-details-actions .action-quantity-and-cart {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: max-content;
+  gap: 20px;
+}
+.product-details-actions .add-to-cart {
+  padding: 15px 20px;
+  cursor: pointer;
+  color: #FFFFFF;
+  border: none;
+  background-color: rgba(107, 158, 255, 0.6901960784);
+}
+.product-details-actions .add-to-wishlist {
+  font-size: smaller;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #E9E9EB;
+  border: none;
+  background-color: transparent;
+  gap: 10px;
+}
+.product-details-actions .add-to-wishlist i {
+  font-size: medium;
+}
+.product-details-meta {
+  font-size: smaller;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 85px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+  gap: 15px;
+}
+.product-details-meta .meta-content {
+  font-weight: normal;
+}
+.product-details-meta .meta-content a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #E9E9EB;
+}
+.product-details-share {
+  font-size: smaller;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.product-details-share a {
+  font-size: 20px;
+  color: #E9E9EB;
+}
+.product-details-share a:hover {
+  color: #C2C2C2;
+}
+
+/*# sourceMappingURL=main_details.css.map */
